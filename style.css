@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; color: #1a1a1a; background: #fff; line-height: 1.7; }
+.container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+header { background-color: #c6c6c6; padding: 60px 0; border-bottom: 1px solid #ddd; }
+.top-tag { text-transform: uppercase; font-size: 0.75rem; letter-spacing: 1px; color: #777; margin-bottom: 15px; }
+header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; margin: 5px 0; }
+header h2 { font-family: 'Playfair Display', serif; font-weight: 400; font-style: italic; color: #555; }
+.author-line { margin-top: 20px; font-size: 0.95rem; border-top: 1px solid #ccc; display: inline-block; padding-top: 10px; }
+
+.hero-split { padding: 50px 0; background: #f2f2f2; }
+.flex-hero { display: flex; align-items: center; gap: 40px; }
+.quote-side { flex: 1; }
+.quote-side blockquote { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-style: italic; border: none; }
+.photo-side { flex: 1; }
+.photo-side img { width: 100%; height: auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+.statement-content br {
+    display: block;
+    content: "";
+    margin-top: 1.5em; /* This creates the physical gap you want */
+}
+
+
+h3 { font-family: 'Playfair Display', serif; font-size: 1.8rem; margin: 40px 0 20px; color: #000; }
+.data-image { margin: 40px 0; text-align: center; }
+.data-image img { max-width: 100%; border: 1px solid #eee; }
+.caption { font-size: 0.8rem; color: #888; margin-top: 10px; }
+.gallery-grid { display: flex; gap: 15px; margin-top: 20px; }
+.img-item img { width: 100%; height: auto; background: #eee; }
+
+.references { margin-top: 60px; padding-bottom: 40px; }
+.references hr { border: 0; border-top: 1px solid #eee; margin-bottom: 30px; }
+.references h4 { text-transform: uppercase; font-size: 0.8rem; margin-bottom: 15px; }
+.references ul { list-style: none; font-size: 0.9rem; color: #444; }
+.references li { margin-bottom: 10px; }
+
+footer { background: #1a1a1a; color: #fff; padding: 50px 0; margin-top: 40px; }
+.footer-flex { display: flex; justify-content: space-between; align-items: center; }
+.contact-info p { margin: 5px 0; font-size: 0.9rem; opacity: 0.8; }
+.social-links a { color: #fff; text-decoration: none; margin-left: 20px; font-size: 0.85rem; border: 1px solid #444; padding: 8px 15px; transition: 0.3s; }
+.social-links a:hover { background: #fff; color: #000; }
+
+@media (max-width: 768px) {
+    .flex-hero { flex-direction: column; text-align: center; }
+    .footer-flex { flex-direction: column; text-align: center; gap: 30px; }
+}
